@@ -3,18 +3,38 @@ package com.example.sound_board;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class Main4Activity extends AppCompatActivity {
 
+    private MediaPlayer mMediaplayer;
+    private Button mPlay, mPause;
     private Button bak;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
+        mPause = findViewById(R.id.pause);
+        mPlay = findViewById(R.id.play);
+        mMediaplayer = MediaPlayer.create(this, R.raw.highoctane);
+
+        mPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mMediaplayer.start();
+            }
+        });
+        mPause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mMediaplayer.pause();
+            }
+        });
 
         bak = (Button) findViewById(R.id.bak);
         bak.setOnClickListener(new View.OnClickListener() {
