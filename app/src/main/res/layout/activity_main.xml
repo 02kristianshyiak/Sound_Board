@@ -25,4 +25,11 @@
         android:layout_below="@id/extre"
         android:text="High Octane"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end"
+        android:layout_below="@id/high"
+        android:text="Endless Motion" />
+
 </RelativeLayout>
