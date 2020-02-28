@@ -3,12 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".Main3Activity">
+
+    <ImageView
+        android:id="@+id/extreme"
+        android:layout_width="179dp"
+        android:layout_height="144dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/extremeaction" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/extreme"
         android:text="Play" />
 
     <Button
@@ -16,6 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/pause"
         android:text="Pause"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/play"/>
 
     <Button
@@ -23,6 +35,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/bac"
         android:text="Back"
-        android:layout_below="@id/pause"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
 
 </RelativeLayout>
