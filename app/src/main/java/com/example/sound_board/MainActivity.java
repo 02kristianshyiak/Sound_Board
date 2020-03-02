@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button extre;
     private Button high;
     private Button end;
+    private  Button rock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
                 openMain5Activity();
             }
         });
+
+        rock = (Button) findViewById(R.id.rock);
+        rock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain6Activity();
+            }
+        });
     }
 
     public void openMain2Activity() {
@@ -68,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMain5Activity() {
         Intent intent = new Intent(this, Main5Activity.class);
+        startActivity(intent);
+    }
+
+    public void openMain6Activity() {
+        Intent intent = new Intent(this, Main6Activity.class);
         startActivity(intent);
     }
 }

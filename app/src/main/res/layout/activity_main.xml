@@ -27,7 +27,7 @@
         android:id="@+id/high"
         android:layout_below="@id/extre"
         android:paddingRight="294dp"
-        android:text="High Octane"/>
+        android:text="High Octane" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,5 +36,13 @@
         android:layout_below="@id/high"
         android:paddingRight="269dp"
         android:text="Endless Motion" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rock"
+        android:layout_below="@id/end"
+        android:paddingRight="300dp"
+        android:text="Happy Rock" />
 
 </RelativeLayout>
