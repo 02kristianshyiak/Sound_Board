@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button high;
     private Button end;
     private  Button rock;
+    private Button moose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 openMain6Activity();
             }
         });
+
+        moose = (Button) findViewById(R.id.moose);
+        moose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain7Activity();
+            }
+        });
     }
 
     public void openMain2Activity() {
@@ -82,6 +91,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMain6Activity() {
         Intent intent = new Intent(this, Main6Activity.class);
+        startActivity(intent);
+    }
+
+    public void openMain7Activity() {
+        Intent intent = new Intent(this, Main7Activity.class);
         startActivity(intent);
     }
 }

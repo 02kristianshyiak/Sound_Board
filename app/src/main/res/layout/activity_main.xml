@@ -45,4 +45,12 @@
         android:paddingRight="300dp"
         android:text="Happy Rock" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moose"
+        android:layout_below="@id/rock"
+        android:paddingRight="337dp"
+        android:text="Moose" />
+
 </RelativeLayout>
