@@ -53,4 +53,20 @@
         android:paddingRight="337dp"
         android:text="Moose" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/evo"
+        android:layout_below="@id/moose"
+        android:paddingRight="311dp"
+        android:text="Evolution" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sum"
+        android:layout_below="@id/evo"
+        android:paddingRight="327dp"
+        android:text="Summer" />
+
 </RelativeLayout>

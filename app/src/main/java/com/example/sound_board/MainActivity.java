@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     private Button end;
     private  Button rock;
     private Button moose;
+    private Button evo;
+    private Button sum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,22 @@ public class MainActivity extends AppCompatActivity {
                 openMain7Activity();
             }
         });
+
+        evo = (Button) findViewById(R.id.evo);
+        evo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain8Activity();
+            }
+        });
+
+        sum = (Button) findViewById(R.id.sum);
+        sum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain9Activity();
+            }
+        });
     }
 
     public void openMain2Activity() {
@@ -96,6 +114,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openMain7Activity() {
         Intent intent = new Intent(this, Main7Activity.class);
+        startActivity(intent);
+    }
+
+    public void openMain8Activity() {
+        Intent intent = new Intent(this, Main8Activity.class);
+        startActivity(intent);
+    }
+
+    public void openMain9Activity() {
+        Intent intent = new Intent(this, Main9Activity.class);
         startActivity(intent);
     }
 }
