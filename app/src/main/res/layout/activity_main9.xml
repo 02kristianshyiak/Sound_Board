@@ -12,7 +12,7 @@
         android:layout_height="144dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
-        android:src="@drawable/summer" />
+        android:src="@drawable/house" />
 
     <Button
         android:layout_width="wrap_content"

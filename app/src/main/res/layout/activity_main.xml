@@ -64,9 +64,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/sum"
+        android:id="@+id/hou"
         android:layout_below="@id/evo"
-        android:paddingRight="327dp"
-        android:text="Summer" />
+        android:paddingRight="340dp"
+        android:text="House" />
 
 </RelativeLayout>

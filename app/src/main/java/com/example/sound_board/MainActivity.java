@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private  Button rock;
     private Button moose;
     private Button evo;
-    private Button sum;
+    private Button hou;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        sum = (Button) findViewById(R.id.sum);
-        sum.setOnClickListener(new View.OnClickListener() {
+        hou = (Button) findViewById(R.id.hou);
+        hou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMain9Activity();
