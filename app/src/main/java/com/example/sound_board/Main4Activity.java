@@ -40,6 +40,7 @@ public class Main4Activity extends AppCompatActivity {
         bak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mMediaplayer.pause();
                 openMainActivity();
             }
         });
